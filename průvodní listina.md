@@ -7,10 +7,15 @@ Výzkumné otázky:
 5) Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
    
 Výstupem by měly být dvě tabulky v databázi, ze kterých se požadovaná data dají získat. Připravila jsem :
+
 •	č. 1  t_jana_sindelkova_project_SQL_primary_final (pro data mezd a cen potravin za Českou republiku sjednocených na totožné porovnatelné období – společné roky) k otázkám 1 – 4,
+
 •	tabulku č. 2  t_jana_sindelkova__project_SQL_secondary_final (pro dodatečná data o dalších evropských státech) k otázce č. 5,
-•	průběžné tabulky: t_inflace, t_kupni_sila_chleb_mleko, t_vyvoj_cen
-•	views: v_eu_country, v_lookup_table_null, v_mzdy_odvetvi, v_vyvoj_cen
+
+•	průběžné tabulky: t_inflace, t_kupni_sila_chleb_mleko, t_vyvoj_cen,
+
+•	views: v_eu_country, v_lookup_table_null, v_mzdy_odvetvi, v_vyvoj_cen.
+
 
 Odpovědi:
 1) Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
