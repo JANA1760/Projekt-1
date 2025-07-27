@@ -44,7 +44,7 @@ Tento dotaz směřuje do zkoumání vývoje v dalších evropských státech, ze
 Nižší Giniho index v rozmezí kolem 0,3 znamená, že ve společnosti je silná střední třída, která profituje z celospolečenského blahobytu, mzdy rostou napříč všemi odvětvími.  Státní politika sanuje výraznější rozdíly. Čím více ekonomika prosperuje, tím je společnost plošně bohatší. Nedochází k sociálním nerovnostem. Nárůst HDP je obvykle v důsledku jak investic, tak vládních výdajů, tak růstu spotřeby, která je v důsledku růstu mezd. Růst mezd vyvolá obvykle růst cen potravin, dokud nabídka nezareaguje svoji produktivitou. Když je růst HDP tažen produktivitou, tedy investicemi a vývozem, tak dochází k mírnému růstu cen. Naproti tomu, když je HDP tažen spotřebou, tedy růstem mezd, tak se ceny zvyšují.
 K přípravě výstupů k jsem využila tabulku t_jana_sindelkova_projekt_SQL_secondary_final, ve které jsou data ze všech zemí. Připravila jsem si view v_eu_country, ve kterém jsou data ze zemí Evropy. Pro účely zodpovězení otázky č. 5 postačí data pro vybrané země Evropy  - Rakousko, Německo,  Slovensko a Řecko , Itálie, Albánie, Španělsko, Švédko, Norsko, Bulharsko, Srbsko, Slovinsko (populace, hdp, gini, výpočet hdp na člověka) na kterých si ukážeme, jak fungují makroekonomické principy.
 
-Odpověď
+Odpověď:
 
 Tam, kde je růst HDP při Giniho indexu do 0,3, ekonomika je tažená produktivitou, je rozumné zdanění, tak tam je nárůst mezd průběžný, celoplošný, růst cen potravin je mírný, inflace v normě. Reálné mzdy rostou, tzn. míra inflace je nižší než nárůst mezd. Poptávka je rozložená. Tento model je typický pro skandinávské země a země střední Evropy. 
 
@@ -52,7 +52,7 @@ V rozvinutých ekonomikách s vyšším Giniho indexem,cca 0,35 je rozdělení b
 
 Naopak tam, kde je růst HDP při Giniho indexu výrazně nad 0,35, není žádná významná síla v ekonomice, mzdy rostou zcela nerovnoměrně, je velká polarizace společnosti, vysoké příjmy u bohatších zvyšují poptávku po luxusním zboží a nemovitostech, což může tlačit ceny nahoru. Inflace je vysoká. Spotřeba je koncentrovaná.  Reálné mzdy většiny obyvatel klesají. Tento model je typický pro chudé ekonomiky. Čím vyšší Ginniho index, tím rychlejší růst cenové hladiny. Typické pro Bulharsko, Srbsko.
 
-Závěr
+Závěr:
 Pokud HDP vzroste vlivem produktivity či exportu, v zemích s nižším Giniho indexem, projeví se to rovnoměrným nárůstem mezd a následně mírnou, pomalou inflací. Reálné mzdy vzrostou. 
 
 Pokud HDP vzroste v rozvojových zemích s vysokým Giniho indexem, projeví se to silnou, rychlou inflací. Byť nominální mzdy vzrostou, reálné mzdy poklesnou. Většina obyvatel chudne a rychle. 
