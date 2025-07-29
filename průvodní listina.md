@@ -44,10 +44,10 @@ Tato otázka také směřuje na vývoj inflace, tentokrát k maximu. Příprava 
 V každém roce jsou potraviny, které zdražily o více než 10 %. Nejčastěji je zastoupeno zdražení ve stupni č. 2 a 3, tedy do 20 % a do 30 %. Ojediněle je stupeň č. 4 – 7. 
 
 5) Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
-Tento dotaz směřuje do zkoumání vývoje v dalších evropských státech, zejména vývoje HDP, giniho indexu a vlivu na mzdy a ceny potravin. Zde musíme zabrousit do makroekonomie.
+Tento dotaz směřuje do zkoumání vývoje v dalších evropských státech, zejména vývoje HDP, giniho indexu a vlivu na mzdy a ceny potravin. Otázka je prediktivní. Zde musíme zabrousit do makroekonomie.
 
 Nižší Giniho index v rozmezí kolem 0,3 znamená, že ve společnosti je silná střední třída, která profituje z celospolečenského blahobytu, mzdy rostou napříč všemi odvětvími.  Státní politika sanuje výraznější rozdíly. Čím více ekonomika prosperuje, tím je společnost plošně bohatší. Nedochází k sociálním nerovnostem. Nárůst HDP je obvykle v důsledku jak investic, tak vládních výdajů, tak růstu spotřeby, která je v důsledku růstu mezd. Růst mezd vyvolá obvykle růst cen potravin, dokud nabídka nezareaguje svoji produktivitou. Když je růst HDP tažen produktivitou, tedy investicemi a vývozem, tak dochází k mírnému růstu cen. Naproti tomu, když je HDP tažen spotřebou, tedy růstem mezd, tak se ceny zvyšují.
-K přípravě výstupů k jsem využila tabulku t_jana_sindelkova_projekt_SQL_secondary_final, ve které jsou data ze všech zemí. Připravila jsem si view v_eu_country, ve kterém jsou data ze zemí Evropy. Pro účely zodpovězení otázky č. 5 postačí data pro vybrané země Evropy  - Rakousko, Německo,  Slovensko a Řecko , Itálie, Albánie, Španělsko, Švédko, Norsko, Bulharsko, Srbsko, Slovinsko (populace, hdp, gini, výpočet hdp na člověka) na kterých si ukážeme, jak fungují makroekonomické principy.
+K přípravě výstupů k jsem využila tabulku t_jana_sindelkova_projekt_SQL_secondary_final, ve které jsou data ze všech zemí. Připravila jsem si view v_eu_country, ve kterém jsou data ze zemí Evropy. Pro účely zodpovězení otázky č. 5 postačí data pro vybrané země Evropy  - Rakousko, Německo,  Slovensko, Itálie, Albánie, Španělsko, Švédko, Norsko, Bulharsko, Srbsko, Slovinsko (populace, hdp, gini, výpočet hdp na člověka) na kterých si ukážeme, jak fungují makroekonomické principy.
 
 Odpověď:
 
