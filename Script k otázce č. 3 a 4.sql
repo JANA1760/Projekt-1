@@ -17,7 +17,6 @@ Co se vlastně zobrazuje v selectu
 - výpočet inflace cena v roce T/cena v roce T-1 * 100, v procentech, toto bude na okýnkové funkce,
 - vytvořím tabulku, kde bude výpočet vývoje cenové hladiny.
 
-
 kód:
 CREATE VIEW v_vyvoj_cen AS (
 SELECT 
