@@ -9,10 +9,10 @@ year,
 round (gdp)AS gdp,
 gini,
 round (gdp/population)AS gdp_head,
-round (taxes)AS danove_zatizeni,
+round (taxes) AS danove_zatizeni,
 median_age_2018
-FROM t_jana_sindelkova_project_sql_secondary_final tjspssf
+FROM t_jana_sindelkova_project_sql_secondary_final
 WHERE country IN ('Albania','Germany','Spain','Austria',
 'Slovakia', 'Italy', 'Norway', 'Bulgaria','Serbia', 'Slovenia')
 AND YEAR IN ('2016','2017','2018','2019', '2020')
-ORDER BY  YEAR, country;
+ORDER BY  year, country;
