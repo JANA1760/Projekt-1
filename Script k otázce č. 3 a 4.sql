@@ -1,34 +1,31 @@
 Otázka č. 3
+Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)? 
 
-Která kategorie potravin zdražuje nejpomaleji 
-(je u ní nejnižší percentuální meziroční nárůst)? 
+návod:
+- které tabulky jsou potřeba - primary_final,
+- kde najdu jaká data - všechno v primary_final,
+- co je třeba spojit - nic,
+- jaký výpočet je potřeba - výpočet podílu ceny v roce T a v roce T-1,
+- bude nebo nebude filtr na datum,
+- seskupení - kategorie, rok, / tO, co není ve funkci,
+- tvorba VIEW - ano, z toho budu dále počítat. 
 
-Postup:
+komentář:
 Co se vlastně zobrazuje v selectu
 - food_category, rok, cena
 - agregační funkce - průměrná cena v roce
-- výpočet inflace cena v roce T/cena v roce T-1 * 100, 
-v procentech, toto bude na okýnkové funkce
-
-Které tabulky jsou potřeba - primary_final
-Kde najdu jaká DATA - všechno v primary_final
-Co je třeba spojit -
-Jaký výpočet je potřeba - výpočet podílu ceny v roce T a v roce T-1
-Bude nebo nebude filtr na datum - 
-Seskupení - kategorie, rok, / TO, co není ve funkci
-Tvorba VIEW - ano, z toho budu dále počítat 
+- výpočet inflace cena v roce T/cena v roce T-1 * 100, v procentech, toto bude na okýnkové funkce,
+- vytvořím tabulku, kde bude výpočet vývoje cenové hladiny.
 
 
+kód:
 CREATE VIEW v_vyvoj_cen AS (
 SELECT 
 food_category,
 round (avg(price):: NUMERIC, 2) AS average_price,
 payroll_year AS rok
-FROM t_jana_sindelkova_project_sql_primary_final tjspspf
+FROM t_jana_sindelkova_project_sql_primary_final
 GROUP BY food_category, payroll_year);
-
-Nyní můžu WINDOW funktion a vytvořím tabulku, kde přibude
-sloupec s cenou z předchozího roku.
 
 CREATE TABLE t_vyvoj_cen AS (
 SELECT 
@@ -37,8 +34,6 @@ average_price,
 LAG (average_price) OVER (PARTITION BY food_category ORDER BY rok)AS price_year_ago,
 rok
 FROM v_vyvoj_cen);
-
-VYtvořím tabulku, kde bude výpočet vývoje cenové hladiny.
 
 CREATE TABLE t_inflace AS (
 SELECT 
@@ -56,7 +51,7 @@ mezirocni_porovnani_cen
 FROM t_inflace 
 WHERE mezirocni_porovnani_cen < 80
 OR mezirocni_porovnani_cen > 110
-ORDER BY rok ASC, mezirocni_porovnani_cen asc ;
+ORDER BY rok ASC, mezirocni_porovnani_cen ASC;
 
 Otázka č. 4
 Existuje rok, ve kterém byl meziroční nárůst cen potravin 
@@ -78,14 +73,4 @@ CASE
 	ELSE 'mimo interval'
 END AS stupen_inflace
 FROM t_inflace
-ORDER BY food_category,rok, stupen_inflace ;
-
-
-
-
-
-
-
-
-
-
+ORDER BY food_category,rok, stupen_inflace;
