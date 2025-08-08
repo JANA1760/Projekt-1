@@ -33,7 +33,7 @@ AND food_category IN('Chléb konzumní kmínový','Mléko polotučné pasterovan
 GROUP BY food_category, payroll_year, industry
 ORDER BY payroll_year;
 
-DROP TABLE IF exists t_kupni_sila_chleb_mleko;
+DROP TABLE IF EXISTS t_kupni_sila_chleb_mleko;
 
 upravený kód - bez dělení na odvětví :
 
